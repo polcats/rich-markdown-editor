@@ -109,7 +109,7 @@ export default function blockMenuItems(dictionary: typeof baseDictionary): MenuI
             name: "link",
             title: dictionary.link,
             icon: LinkIcon,
-            // shortcut: `${mod} k`,
+            // shortcut: ``,
             keywords: "link url uri href",
         },
         {
