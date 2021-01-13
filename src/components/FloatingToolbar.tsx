@@ -168,10 +168,11 @@ function FloatingToolbar(props) {
         active={props.active && position.visible}
         ref={menuRef}
         offset={position.offset}
-        style={{
-          top: `${position.top}px`,
-          left: `${position.left}px`,
-        }}
+        className="floating-toolbar"
+        // style={{
+        //   top: `${position.top}px`,
+        //   left: `${position.left}px`,
+        // }}
       >
         {position.visible && props.children}
       </Wrapper>
@@ -185,7 +186,7 @@ const Wrapper = styled.div<{
 }>`
   will-change: opacity, transform;
   padding: 8px 16px;
-  position: absolute;
+  // position: absolute;
   z-index: ${props => props.theme.zIndex + 100};
   opacity: 0;
   background-color: ${props => props.theme.toolbarBackground};
